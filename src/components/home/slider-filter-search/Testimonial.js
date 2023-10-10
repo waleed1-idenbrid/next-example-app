@@ -7,14 +7,14 @@ import React from "react";
 import Slider from "react-slick";
 import { Col, Container, Row } from "reactstrap";
 import { HappyClients, Our } from "../../../constValues/constValues";
-import { testimonial2 } from "../../../../data/inputForm";
+// import { testimonial2 } from "../../../../data/inputForm";
 import NoSsr from "../../../libs/utils/NoSsr";
 import ReviewStarr from "../../elements/ReviewStarr";
 
 const TestimonialSection = ({ value, normal }) => {
   return (
     <section className={`testimonial-bg ${normal ? "testimonial-layout6" : ""}`}>
-      <Container>
+      {/* <Container>
         <Row>
           <Col>
             <div className="title-1 text-white">
@@ -56,7 +56,7 @@ const TestimonialSection = ({ value, normal }) => {
             </NoSsr>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
     </section>
   );
 };

@@ -7,7 +7,7 @@ import React from "react";
 import Slider from "react-slick";
 import { Col, Container, Row } from "reactstrap";
 import { Featured, FeaturedProperty } from "../../../constValues/constValues";
-import { feature1 } from "../../../../data/inputForm";
+// import { feature1 } from "../../../../data/inputForm";
 import Img from "../../../libs/utils/BackgroundImageRatio";
 import NoSsr from "../../../libs/utils/NoSsr";
 import AddToWhishList from "../../elements/AddToWhishList";
@@ -23,7 +23,7 @@ const FeatureSection = ({ value }) => {
               <h2>{FeaturedProperty}</h2>
               <hr />
             </div>
-            <NoSsr>
+            {/* <NoSsr>
               <Slider className="feature-1 arrow-light" {...feature1}>
                 {value &&
                   value.map((data, i) => (
@@ -87,7 +87,7 @@ const FeatureSection = ({ value }) => {
                     </div>
                   ))}
               </Slider>
-            </NoSsr>
+            </NoSsr> */}
           </Col>
         </Row>
       </Container>

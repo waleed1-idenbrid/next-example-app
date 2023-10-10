@@ -4,7 +4,7 @@
  */
 import React from "react";
 import Slider from "react-slick";
-import { mainPropertySlider } from "../../../../data/inputForm";
+// import { mainPropertySlider } from "../../../../data/inputForm";
 import Img from "../../../libs/utils/BackgroundImageRatio";
 import NoSsr from "../../../libs/utils/NoSsr";
 import TopTitle from "./TopTitle";
@@ -13,7 +13,7 @@ const SliderBreadcrumbSection = () => {
   const breadcrumbBg = ["/assets/images/property/4.jpg", "/assets/images/property/5.jpg", "/assets/images/property/4.jpg", "/assets/images/property/2.jpg"];
   return (
     <section className="ratio_40 breadcrumb-section p-0 single-property-images">
-      <NoSsr>
+      {/* <NoSsr>
         <Slider className="main-property-slider arrow-image" {...mainPropertySlider}>
           {breadcrumbBg.map((item, index) => (
             <div key={index}>
@@ -23,7 +23,7 @@ const SliderBreadcrumbSection = () => {
             </div>
           ))}
         </Slider>
-      </NoSsr>
+      </NoSsr> */}
       <TopTitle />
     </section>
   );

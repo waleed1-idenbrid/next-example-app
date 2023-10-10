@@ -7,7 +7,7 @@
  */
 import React from "react";
 import Slider from "react-slick";
-import { featureSlider } from "../../../data/inputForm";
+// import { featureSlider } from "../../../data/inputForm";
 import Img from "../../libs/utils/BackgroundImageRatio";
 import NoSsr from "../../libs/utils/NoSsr";
 
@@ -16,7 +16,7 @@ const Featured = () => {
     <div className="advance-card feature-card">
       <h6>Featured</h6>
       <NoSsr>
-        <Slider className="feature-slider" {...featureSlider}>
+        {/* <Slider className="feature-slider" {...featureSlider}>
           <div>
             <Img src="/assets/images/property/4.jpg" className="bg-img" alt="" />
             <div className="bottom-feature">
@@ -44,7 +44,7 @@ const Featured = () => {
               </h6>
             </div>
           </div>
-        </Slider>
+        </Slider> */}
       </NoSsr>
       <div className="labels-left">
         <span className="label label-success">featured</span>

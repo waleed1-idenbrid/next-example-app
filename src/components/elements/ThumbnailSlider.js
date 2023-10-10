@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import { sliderFor, sliderNav } from "../../../data/inputForm";
+// import { sliderFor, sliderNav } from "../../../data/inputForm";
 import NoSsr from "../../libs/utils/NoSsr";
 
 const ThumbnailSlider = ({ images, video, videoData }) => {
@@ -19,7 +19,7 @@ const ThumbnailSlider = ({ images, video, videoData }) => {
       {Array.isArray(images) ? (
         <NoSsr>
           <div>
-            <Slider className="slider-for slick-video" {...sliderFor} asNavFor={nav2} ref={(slider) => setSlider1(slider)}>
+            {/* <Slider className="slider-for slick-video" {...sliderFor} asNavFor={nav2} ref={(slider) => setSlider1(slider)}>
               {images?.map((data, i) => (
                 <div key={i}>
                   {video && i === 0 ? (
@@ -32,7 +32,7 @@ const ThumbnailSlider = ({ images, video, videoData }) => {
                   )}
                 </div>
               ))}
-            </Slider>
+            </Slider> */}
           </div>
           <div>
             <Slider className="slider-nav" {...sliderNav} asNavFor={nav1} ref={(slider) => setSlider2(slider)}>
