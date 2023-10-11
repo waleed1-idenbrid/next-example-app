@@ -1,0 +1,20 @@
+{
+  "typeName": "Query",
+  "fieldName": "getWishList",
+  "arguments": {
+    "propertiesId": [
+      "5784ea98-60c1-70a1-4f03-c78c517aa039",
+      "5784ea98-60c1-70a1-4f03-c78c517aa034"
+    ]
+  },
+  "identity": null,
+  "source": null,
+  "request": {
+    
+    "domainName": null
+  },
+  "prev": {
+    "result": {}
+  }
+}
+

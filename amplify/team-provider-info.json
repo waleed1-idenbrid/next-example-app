@@ -1,0 +1,32 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-realestatewebsite-dev-150934-authRole",
+      "UnauthRoleArn": "arn:aws:iam::812096089383:role/amplify-realestatewebsite-dev-150934-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::812096089383:role/amplify-realestatewebsite-dev-150934-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-realestatewebsite-dev-150934-deployment",
+      "UnauthRoleName": "amplify-realestatewebsite-dev-150934-unauthRole",
+      "StackName": "amplify-realestatewebsite-dev-150934",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:812096089383:stack/amplify-realestatewebsite-dev-150934/2533ad30-5930-11ee-9153-0add41c3b633",
+      "AmplifyAppId": "d20dzcrxfnn9wr",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-realestatewebsite-dev-150934-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "realestatewebsite83da405983da4059": {},
+        "userPoolGroups": {}
+      },
+      "function": {
+        "realEstatetGetWishList": {
+          "deploymentBucketName": "amplify-realestatewebsite-dev-150934-deployment",
+          "s3Key": "amplify-builds/realEstatetGetWishList-384f66532b66396d7643-build.zip"
+        },
+        "realestatewebsite83da405983da4059PostConfirmation": {
+          "deploymentBucketName": "amplify-realestatewebsite-dev-150934-deployment",
+          "s3Key": "amplify-builds/realestatewebsite83da405983da4059PostConfirmation-7439423269514246547a-build.zip"
+        }
+      }
+    }
+  }
+}

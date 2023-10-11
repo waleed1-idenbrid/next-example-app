@@ -1,0 +1,82 @@
+type User
+  @model
+  @auth(
+    rules: [{ allow: public, operations: [read] }, { allow: owner, ownerField: "username", operations: [read, update] }]
+  ) {
+  id: ID!
+  username: String!
+  avatar: String
+  name: String!
+  gender: String
+  birthday: String
+  address: String
+  city: String
+  state: String
+  zipcode: String
+  bio: String
+  email: String!
+  phone_number: String!
+  role: String!
+  email_verified: Boolean
+  createdAt: String
+  updatedAt: String
+}
+
+type Property @model @auth(
+    rules: [{ allow: public, operations: [read] }, { allow: owner, ownerField: "ownerId", operations: [create,read,delete, update] }]
+  ) {
+  id:ID!
+  title:String! @index(name: "getPropertyByTitle") 
+  description:String!
+  property_purpose:String!
+  property_category:String!
+  propety_type:String!
+  property_price:Int!
+  max_rooms:Int
+  baths:Int
+  beds:Int
+  city:String
+  area:String
+  gallery: [String]
+  video:String 
+  features:Features
+  contact_info: ContactInfo
+  Address: Address
+  ownerId: ID
+  owner: User
+  @hasOne(
+    fields: ["ownerId"]
+  )
+}
+
+
+
+type Features {
+    main:[String],
+    bussiness:[String],
+    community:[String],
+    healthcare:[String],
+    nearby:[String],
+    other:[String]
+}
+type ContactInfo {
+   email: String,
+   landline: String, 
+   mobile: String
+}
+
+type Address {
+    address: String,
+    city: String,
+    landmark: String,
+    zipcode: Int
+}
+type WishList{
+   id:ID
+    title: String
+    description: String
+   
+}
+type Query{
+  getWishList(propertiesId: [String]): [WishList] @function(name: "realEstatetGetWishList-${env}")
+}
